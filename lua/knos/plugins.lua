@@ -13,6 +13,9 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
   {
+    'lewis6991/gitsigns.nvim'
+  },
+  {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v2.x',
     dependencies = {
@@ -25,6 +28,14 @@ local plugins = {
       {'hrsh7th/nvim-cmp'},     -- Required
       {'hrsh7th/cmp-nvim-lsp'}, -- Required
       {'L3MON4D3/LuaSnip'},     -- Required
+    }
+  },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "MunifTanjim/nui.nvim",
     }
   },
   {
